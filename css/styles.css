@@ -180,7 +180,7 @@ a.logo:active {
     margin-top: 3rem;
   }
   a.logo {
-    position: absolute;
+    position: relative;
    top: 0;
    left: 0;
     font-size: 1rem;
@@ -191,7 +191,7 @@ a.logo:active {
   }
 
   header.acne {
-    text-align: center;
+    
     padding: 0;
   }
 
