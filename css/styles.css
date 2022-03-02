@@ -199,7 +199,7 @@ a.logo:active {
   .content-title {
     font-size:1.5rem;
     margin: 1rem auto;
-    padding-top: 0;
+    padding: 0.1rem 0.3rem;
     
   }
 
@@ -219,7 +219,7 @@ a.logo:active {
   }
   .menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: baseline;
   }
 
