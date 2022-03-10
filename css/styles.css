@@ -60,6 +60,7 @@ a.logo {
   margin-left: 1.5em;
   margin-top: 0.5em;
   color: initial;
+  letter-spacing: 1px;
 }
 a.logo:active {
   text-shadow: 2px 2px 2px rgb(192, 192, 192);
@@ -68,6 +69,7 @@ a.logo:active {
 a.menu-nav {
   padding: 0 10px;
   color: initial;
+  letter-spacing: 3px;
 }
 a.menu-nav:hover {
   border-bottom: 2px solid black;
