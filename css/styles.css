@@ -161,17 +161,17 @@ a.logo:active {
   flex-direction: column;
 }
 .acne-li {
-  padding: 1rem;
+  padding: .3rem;
   margin: 0 auto;
 }
 
 .acne-img {
   max-width: 100%;
-  padding: 1rem;
-  padding-bottom: 3rem;
+  padding: .3rem;
+  padding-bottom: 2rem;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgb(53, 53, 53);
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 .menu-appear {
   display: none;
