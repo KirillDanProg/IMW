@@ -20,19 +20,16 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-  color: initial;
-}
+
 
 header {
   padding: 2em;
 }
 .menu {
-  /* display: flex;
+   display: flex;
   justify-content: space-between;
   align-items: unset;
-  flex: 1 2; */
+ 
 }
 
 ul {
@@ -52,11 +49,17 @@ li:hover {
   transition: 0.1s;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 a.logo {
   font-size: 1.5em;
   font-weight: 400;
   margin-left: 1.5em;
   margin-top: 0.5em;
+  color: initial;
 }
 a.logo:active {
   text-shadow: 2px 2px 2px rgb(192, 192, 192);
@@ -64,6 +67,7 @@ a.logo:active {
 
 a.menu-nav {
   padding: 0 10px;
+  color: initial;
 }
 a.menu-nav:hover {
   border-bottom: 2px solid black;
@@ -171,8 +175,8 @@ a.logo:active {
   display: none;
 }
 .icon-menu {
-display: none;
-} 
+  display: none;
+}
 
 @media only screen and (max-width: 760px) {
   body,
@@ -290,3 +294,11 @@ display: none;
   
   }
 }
+
+
+
+
+
+
+  
+  
