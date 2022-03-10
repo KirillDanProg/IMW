@@ -9,6 +9,11 @@ body {
   position: relative;
   z-index: 2;
 }
+.wrapper {
+
+  
+  margin: 0 auto;
+}
 
 * {
   box-sizing: border-box;
@@ -20,16 +25,15 @@ body {
   margin: 0 auto;
 }
 
-
-
 header {
   padding: 2em;
+  position: relative;
+  z-index: 99;
 }
 .menu {
-   display: flex;
+  display: flex;
   justify-content: space-between;
   align-items: unset;
- 
 }
 
 ul {
@@ -38,7 +42,7 @@ ul {
   text-align: right;
 }
 li {
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: inline-block;
   list-style: none;
   text-decoration: none;
@@ -60,7 +64,7 @@ a.logo {
   margin-left: 1.5em;
   margin-top: 0.5em;
   color: initial;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 a.logo:active {
   text-shadow: 2px 2px 2px rgb(192, 192, 192);
@@ -87,7 +91,7 @@ span {
   margin: 0.1em;
   position: relative;
   top: -2px;
-  border: 5px solid rgb(233, 198, 0);
+  border: 5px solid rgb(255,215,0);
   box-shadow: 5px 5px 6px rgb(143, 143, 143);
 }
 span:active {
@@ -104,29 +108,45 @@ span:active {
   padding: 2em;
   color: white;
   font-size: 1.1em;
-  min-height: 1100px;
+  height: 80vh;
 }
 
 .content-img {
-  width: 50%;
-  float: left;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin-right: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .content-title {
-  margin-top: 2em;
-  margin-bottom: 1em;
-  padding-top: 2.5em;
+  margin: 5rem 2rem 5rem auto;
+  line-height: 1.7;
+  position: relative;
+  z-index: 99;
+  width: 20%;
+  font-size: 3.5rem;
+  /* font-family: "Rajdhani", sans-serif;
+  font-family: "GFS Didot", serif; */
+ 
+  
+  font-family: "Questrial", sans-serif;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
-
+span.font {
+  font-family:    "GFS Didot", serif;
+  font-weight: 700;
+}
 .position {
   font-size: 1.5rem;
   color: rgb(27, 27, 27);
 }
 p.content-info {
+  margin: 1rem;
   border: 2px solid rgb(255, 248, 248);
-  padding: 2em;
+  padding: 0 2rem 2rem 2rem;
   border-radius: 15px;
   color: rgb(255, 255, 255);
 }
@@ -161,17 +181,17 @@ a.logo:active {
   flex-direction: column;
 }
 .acne-li {
-  padding: .3rem;
+  padding: 1rem;
   margin: 0 auto;
 }
 
 .acne-img {
   max-width: 100%;
-  padding: .3rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
   border-radius: 5px;
   box-shadow: 2px 2px 10px rgb(53, 53, 53);
-  margin-bottom: 2rem;
+  margin-bottom: 2em;
 }
 .menu-appear {
   display: none;
@@ -181,25 +201,43 @@ a.logo:active {
 }
 
 @media only screen and (max-width: 760px) {
+  .wrapper {
+    width: 100%;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+      rgb(255, 255, 255),
+      rgb(138, 138, 138),
+      rgb(168, 168, 168),
+      rgb(146, 144, 144),
+      rgb(136, 136, 136)
+    );
+  }
   body,
   h1,
   h2,
   ul,
   li {
-    
     padding: 0;
     margin: 0;
   }
-  body {
- background: linear-gradient(rgb(255, 255, 255), rgb(138, 138, 138), rgb(168, 168, 168),rgb(146, 144, 144), rgb(136, 136, 136));
+
+  section {
+    min-height: 700px
   }
 
   header {
     padding: 0;
+    position: relative;
+    z-index: 99;
   }
   .acne-title {
     font-size: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 3rem;
   }
   a.logo {
     display: block;
@@ -223,19 +261,26 @@ a.logo:active {
     display: block;
     margin: 0 auto;
   }
+
   .content-title {
-    width: 100%;
-    font-size: 1.1rem;
-    margin: 0.5rem auto;
+    position: relative;
+    z-index: 1;
+    right: 0;
+    width: 20%;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 1rem 4rem 0 auto;
     padding-top: 0;
   }
-
+  /* POSITION ABSOLUTE CHANGE #1 */
   .content-img {
     width: 100%;
     padding: 0;
     margin: 0;
     margin-bottom: 1rem;
-
+    position: absolute;
+    top: 0;
+    left: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .main {
@@ -243,11 +288,8 @@ a.logo:active {
     padding: 0;
     color: white;
     font-size: 1.1em;
-    min-height: 1100px;
   }
   .menu {
-    display: flex;
-    place-content: space-between;
   }
   .menu-list {
     display: none;
@@ -282,9 +324,12 @@ a.logo:active {
     z-index: 999;
   }
   .list-item {
+    padding-right: .7rem;
     display: block;
     margin-top: 2rem;
     font-size: 1.5rem;
+    border-bottom: .1rem solid rgb(255,215,0);
+    border-right: .1rem solid rgb(255,215,0);
   }
   .list-item:nth-child(2) {
     margin-top: 3rem;
@@ -297,14 +342,8 @@ a.logo:active {
   }
   .btn-appear {
     display: block;
-  
+  }
+  p {
+    float: left;
   }
 }
-
-
-
-
-
-
-  
-  
