@@ -186,8 +186,12 @@ a.logo:active {
   h2,
   ul,
   li {
+    
     padding: 0;
     margin: 0;
+  }
+  body {
+ background: linear-gradient(rgb(255, 255, 255), rgb(138, 138, 138), rgb(168, 168, 168),rgb(146, 144, 144), rgb(136, 136, 136));
   }
 
   header {
