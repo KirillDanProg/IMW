@@ -247,6 +247,7 @@ display: none;
     width: 20px;
     margin-right: 1rem;
     cursor: pointer;
+    display: block;
   }
 
   p.content-info {
