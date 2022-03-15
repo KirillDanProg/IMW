@@ -5,14 +5,14 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(rgb(255, 253, 253), rgb(0, 0, 0));
+  background: linear-gradient(
+    rgb(180, 180, 180),
+    rgb(146, 146, 146),
+    rgb(160, 158, 158),
+    rgb(133, 132, 132)
+  );
   position: relative;
   z-index: 2;
-}
-.wrapper {
-
-  
-  margin: 0 auto;
 }
 
 * {
@@ -26,20 +26,26 @@ body {
 }
 
 header {
-  padding: 2em;
+  padding: 1rem;
   position: relative;
   z-index: 99;
 }
 .menu {
   display: flex;
   justify-content: space-between;
-  align-items: unset;
+}
+ul.menu-list {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+.menu-list li {
+  width: 20%;
 }
 
 ul {
   max-width: 100%;
-  display: inline-block;
-  text-align: right;
+  display: block;
 }
 li {
   padding: 0 1rem;
@@ -59,6 +65,7 @@ a {
 }
 
 a.logo {
+  display: inline-block;
   font-size: 1.5em;
   font-weight: 400;
   margin-left: 1.5em;
@@ -71,7 +78,8 @@ a.logo:active {
 }
 
 a.menu-nav {
-  padding: 0 10px;
+  padding: 0 1rem;
+
   color: initial;
   letter-spacing: 3px;
 }
@@ -91,7 +99,7 @@ span {
   margin: 0.1em;
   position: relative;
   top: -2px;
-  border: 5px solid rgb(255,215,0);
+  border: 5px solid rgb(255, 215, 0);
   box-shadow: 5px 5px 6px rgb(143, 143, 143);
 }
 span:active {
@@ -112,11 +120,11 @@ span:active {
 }
 
 .content-img {
-  max-width: 100%;
+  margin-top: -12rem;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  margin-right: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -125,14 +133,15 @@ span:active {
   line-height: 1.7;
   position: relative;
   z-index: 99;
-  width: 20%;
-  font-size: 3.5rem;
+  width: 30%;
+  font-size: 3rem;
   font-family: "Questrial", sans-serif;
   letter-spacing: 10px;
   text-transform: uppercase;
+  word-wrap: normal;
 }
 span.font {
-  font-family:    "GFS Didot", serif;
+  font-family: "GFS Didot", serif;
   font-weight: 700;
 }
 .position {
@@ -223,7 +232,7 @@ a.logo:active {
   }
 
   section {
-    min-height: 700px
+    min-height: 700px;
   }
 
   header {
@@ -236,7 +245,7 @@ a.logo:active {
     margin-top: 3rem;
   }
   a.logo {
-    display: block;
+    display: inline-block;
     position: relative;
     top: 0;
     left: 0;
@@ -285,26 +294,23 @@ a.logo:active {
     color: white;
     font-size: 1.1em;
   }
-  .menu {
-  }
-  .menu-list {
-    display: none;
-  }
-
+  
+  
   .icon-menu {
     width: 20px;
-    margin-right: 1rem;
+    margin: 0.5rem;
     cursor: pointer;
-    display: block;
+    display: inline-block;
+    float: right;
   }
-
+  
   p.content-info {
     border: 2px solid rgb(255, 248, 248);
     padding: 0.3rem;
     border-radius: 15px;
     color: rgb(255, 255, 255);
   }
-
+  
   .menu-appear {
     display: none;
     position: fixed;
@@ -320,12 +326,12 @@ a.logo:active {
     z-index: 999;
   }
   .list-item {
-    padding-right: .7rem;
+    padding-right: 0.7rem;
     display: block;
     margin-top: 2rem;
     font-size: 1.5rem;
-    border-bottom: .1rem solid rgb(255,215,0);
-    border-right: .1rem solid rgb(255,215,0);
+    border-bottom: 0.1rem solid rgb(255, 215, 0);
+    border-right: 0.1rem solid rgb(255, 215, 0);
   }
   .list-item:nth-child(2) {
     margin-top: 3rem;
@@ -342,4 +348,27 @@ a.logo:active {
   p {
     float: left;
   }
+  span {
+    border: .1rem solid rgb(255, 215, 0);
+  }
+  .menu-list {
+    display: none;
+  }
+}
+
+/* DIET */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-img {
+  width: 300px;
+  height: 300px;
+}
+.grid-img img {
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
